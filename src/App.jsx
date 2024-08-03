@@ -57,18 +57,18 @@ const App = () => {
       });
     } else {
       setErrors(errors);
-      // Change the alert text to include the exact error message for phone number validation.
-      if (errors.phone) {
+      if (errors.dob) {
+        alert(errors.dob); // Alert for DOB validation error
+      } else if (errors.phone) {
         alert(errors.phone);
       } else if (errors.email) {
         alert(errors.email);
       } else if (errors.username) {
         alert(errors.username);
-      } else if (errors.dob) {
-        alert(errors.dob);
       }
     }
   };
+
   return (
     <div>
       <h1 className="userHead">User Details Model</h1>
