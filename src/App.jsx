@@ -86,6 +86,7 @@ const App = () => {
                     id="username"
                     value={formData.username}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div>
@@ -95,6 +96,7 @@ const App = () => {
                     id="email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div>
@@ -104,6 +106,7 @@ const App = () => {
                     id="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div>
@@ -113,6 +116,7 @@ const App = () => {
                     id="dob"
                     value={formData.dob}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <button type="submit" className="submit-button">
